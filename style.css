@@ -1,0 +1,13 @@
+.block-char {
+    display: inline-block;
+    width: 12px;
+    text-transform: capitalize;
+    border-bottom: 2px solid black;
+    padding: 2px 2px 0px 2px;
+    margin: 3px;
+    font-weight: 500;
+}
+
+.word-output {
+    height: 36px;
+}

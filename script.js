@@ -16,7 +16,7 @@ startButton.addEventListener('click', function(){
         wordInput.disabled = true;
         startButton.disabled = true;
         for(var i = 0; i < 26; ++i) {
-            alphabetButtons.innerHTML += `<button type="button" class="btn btn-info m-1" onclick="existInWord(this)">`+ String.fromCharCode(i+65) +`</button>`;
+            alphabetButtons.innerHTML += `<button type="button" class="btn btn-info m-1" onclick="checkLetterInWord(this)">`+ String.fromCharCode(i+65) +`</button>`;
         }
         for(var i = 0; i < word.length; ++i) {
             wordOutput.innerHTML += `<div class="block-char"></div>`;
@@ -26,7 +26,7 @@ startButton.addEventListener('click', function(){
     }
 })
 
-function existInWord(letterId) {
+function checkLetterInWord(letterId) {
     var letter = letterId.innerHTML;
     letterId.disabled = true;
     if(word.includes(letter)){
